@@ -1,1 +1,73 @@
-hi!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIT-8 :: Binary Bulb Console</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="rig">
+
+  <div class="rig-head">
+    <div>
+      <h1>BIT<span>-8</span> CONSOLE</h1>
+      <p>BINARY / DECIMAL TRAINER &mdash; MODEL 1978</p>
+    </div>
+    <p><span class="power-led"></span>POWER OK</p>
+  </div>
+
+  <div class="console">
+    <span class="veneer left"></span><span class="veneer right"></span>
+    <span class="rivet tl"></span><span class="rivet tr"></span>
+    <span class="rivet bl"></span><span class="rivet br"></span>
+    <div class="nameplate">
+      <span class="np-model">MODEL&nbsp;8B</span>
+      <span class="np-serial">SER.&nbsp;0148&nbsp;&middot;&nbsp;PAT.&nbsp;PEND</span>
+    </div>
+
+    <div class="bulb-row" id="bulbRow"></div>
+
+    <div class="screen-housing">
+      <div class="screen">
+        <div class="screen-row">
+          <div>
+            <p class="readout-label">BINARY</p>
+            <p class="binary-string" id="binaryString"></p>
+          </div>
+          <div class="decimal-block">
+            <p class="readout-label">DECIMAL</p>
+            <p class="decimal-value" id="decimalValue">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-row">
+      <div class="decimal-input">
+        <label for="numInput">SET&nbsp;VALUE</label>
+        <input id="numInput" type="number" min="0" max="255" placeholder="0&ndash;255">
+        <button class="chunky" id="setBtn">SET</button>
+      </div>
+      <div class="btn-group">
+        <button class="chunky" id="randomBtn">RANDOM</button>
+        <button class="chunky" id="clearBtn">CLEAR</button>
+        <button class="chunky" id="maxBtn">ALL 1s</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <b>How it works:</b> each bulb is one <b>bit</b>. Press a button &mdash; it shows <code>1</code> and the bulb lights up,
+    showing <code>0</code> keeps it dark. Every bulb stands for a power of two: <code>128&nbsp;64&nbsp;32&nbsp;16&nbsp;8&nbsp;4&nbsp;2&nbsp;1</code>,
+    left to right. Add up the values of the lit bulbs and you get the decimal number on screen. Type a number
+    into <b>SET VALUE</b> to watch the console work it out in reverse.
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
