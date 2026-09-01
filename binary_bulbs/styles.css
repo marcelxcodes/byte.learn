@@ -52,7 +52,7 @@ html,body{
   margin-bottom:20px;
 }
 .rig-head h1{
-  font-family:'Special Elite', monospace;
+  font-family:'Courier Prime', monospace;
   font-size:34px;
   letter-spacing:2px;
   margin:0;
@@ -133,7 +133,7 @@ html,body{
     0 2px 4px rgba(0,0,0,0.5);
 }
 .nameplate .np-model{
-  font-family:'Special Elite', monospace;
+  font-family:'Courier Prime', monospace;
   font-size:13px;
   letter-spacing:2px;
   color:#3a2408;
@@ -174,7 +174,7 @@ html,body{
 }
 
 .place-value{
-  font-family:'Special Elite', monospace;
+  font-family:'Courier Prime', monospace;
   font-size:16px;
   color:var(--cream-dim);
   letter-spacing:1px;
@@ -239,7 +239,7 @@ html,body{
   border:2px solid #2a1a0d;
   background:radial-gradient(circle at 35% 30%, #5c4429, #3a2415 60%, #24150c 100%);
   color:var(--cream-dim);
-  font-family:'Special Elite', monospace;
+  font-family:'Courier Prime', monospace;
   font-size:18px;
   line-height:1;
   cursor:pointer;
@@ -324,7 +324,7 @@ html,body{
 }
 
 .binary-string{
-  font-family:'Special Elite', monospace;
+  font-family:'Courier Prime', monospace;
   font-size:26px;
   letter-spacing:6px;
   color:var(--terminal-green-dim);
@@ -337,7 +337,7 @@ html,body{
 
 .decimal-block{ text-align:right; }
 .decimal-value{
-  font-family:'Special Elite', monospace;
+  font-family:'Courier Prime', monospace;
   font-size:52px;
   line-height:1;
   color:var(--terminal-green);
