@@ -10,7 +10,9 @@
   --cream-dim:      #b89a6f;
   --amber:          #ff9a1f;
   --amber-glow:     #ffd28a;
-  --screen-bg:      #1c0f04;
+  --screen-bg:      #000000;
+  --terminal-green:      #39ff6a;
+  --terminal-green-dim:  #1f9e46;
   --phosphor:       #ffb347;
   --phosphor-dim:   #7a4413;
   --rivet:          #3a2313;
@@ -300,7 +302,7 @@ html,body{
 .screen::after{
   content:"";
   position:absolute; inset:0;
-  background:radial-gradient(ellipse at 50% 30%, rgba(255,179,71,0.08), transparent 70%);
+  background:radial-gradient(ellipse at 50% 30%, rgba(57,255,106,0.07), transparent 70%);
   pointer-events:none;
 }
 
@@ -317,7 +319,7 @@ html,body{
 .readout-label{
   font-size:11px;
   letter-spacing:2px;
-  color:var(--phosphor-dim);
+  color:var(--terminal-green-dim);
   margin:0 0 2px;
 }
 
@@ -325,11 +327,11 @@ html,body{
   font-family:'Special Elite', monospace;
   font-size:26px;
   letter-spacing:6px;
-  color:var(--phosphor-dim);
+  color:var(--terminal-green-dim);
 }
 .binary-string b{
-  color:var(--phosphor);
-  text-shadow:0 0 6px rgba(255,179,71,0.8), 0 0 14px rgba(255,179,71,0.4);
+  color:var(--terminal-green);
+  text-shadow:0 0 6px rgba(57,255,106,0.8), 0 0 14px rgba(57,255,106,0.4);
   font-weight:normal;
 }
 
@@ -338,8 +340,8 @@ html,body{
   font-family:'Special Elite', monospace;
   font-size:52px;
   line-height:1;
-  color:var(--phosphor);
-  text-shadow:0 0 8px rgba(255,179,71,0.85), 0 0 20px rgba(255,179,71,0.4);
+  color:var(--terminal-green);
+  text-shadow:0 0 8px rgba(57,255,106,0.85), 0 0 20px rgba(57,255,106,0.4);
 }
 
 /* ---------- Controls under screen ---------- */
